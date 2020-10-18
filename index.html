@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <script type="text/javascript" charset="utf-8" src="jeu2048.js"></script> 
+        <title>2048</title>
+        
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link href="jeu2048.css" type="text/css"     rel="stylesheet"      media="screen"/>
+        <link href="favicon.ico" type="image/x-icon" rel="shortcut icon"   media="screen"/>
+    </head>
+    
+    <body >
+        <div id="page">
+            
+            <div id="presentation">
+                <div id="top"> 
+                    <h1>2048</h1> 
+                    <div class="movescount"> <span>Moves</span><br/><span id="movecount">0</span></div>
+                    <div class="scoreboard"> <span>Score</span><br/><span id="score">0</span></div>
+                </div>
+                
+                <div id="bottom"> 
+                    <p> Taille:</p>
+                    <input id="size" type="text" value="4" /> 
+                    <p id="limite"> Limite:</p>
+                    <select name="limitscore" id="limitscore" onchange="selectManager()">
+                        <option value="2048">2048</option>
+                        <option value="1024">1024</option>
+                        <option value="512">512</option>
+                        <option value="256">256</option>
+                        <option value="128">128</option>
+                    </select>
+                    <input type="button" id="boutonNew" value="Nouveau Jeu" onclick="beginGame()"></input>
+                </div>              
+            </div>
+            
+            <div id="game">
+             <!--Où l'on va inserer le tableau de jeu-->
+                <div id="winningBoard"> <!--Message pour le gagnant. Il est invisible de base  -->
+                    <h2 >Vous avez gagné !</h2>
+                    <div id="wincell"><p>2048</p></div>
+                    <h2 id="winningScore"> Score:</h2>
+                    <input type="button" class="restart" value="recommencer" onclick="beginGame()"></input>
+                </div>
+                <div id="losingBoard"><!--Message pour le perdant. Il est invisible de base  -->
+                    <h2 >Game Over !</h2>
+                    <input type="button" class="restart" value="recommencer" onclick="beginGame()"></input>
+                </div>   
+            </div>
+            
+        </div>
+    </body>
+</html>

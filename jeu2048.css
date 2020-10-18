@@ -1,0 +1,176 @@
+
+
+body{
+	 font-family: Verdana,Arial,sans-serif;
+	 background-color: #FFFAF0;
+	 padding: 0px;
+	 font-size:20px;
+	 color: #79756C;
+}
+
+#page{
+    background-color: #FFFAF0;
+	margin-left: 35%;
+	width: 50%;	
+	border-radius:10px;
+}
+
+#presentation{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:center;
+    margin-left:0%;
+    margin-bottom:30px;
+}
+#top{
+    display:flex;
+    flex-wrap:nowrap;  
+}
+#bottom{
+    display:flex;
+    flex-wrap:wrap;
+}
+#bottom > #limite{
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:20px;
+}
+#game{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    margin-top:0px;
+    z-index:1;
+}
+#winningBoard,#losingBoard{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    flex-wrap:nowrap;
+    opacity:0.9;
+    border-radius:5px;
+    font-size:100%;
+    font-weight:bold;
+    background-color:white;
+    height:100%;
+    width:100%;
+    margin:auto;
+    z-index:2;
+    visibility:hidden;
+}
+#winningBoard{
+    background-color:#fffbe6;
+}
+h2{
+    text-align:center;
+    margin-left:50px;
+}
+.scoreboard, .movescount{
+    background-color: #937453; 
+    border: none;
+    border-radius: 10px;
+    color: #FFFAF0;
+    padding: 20px 35px;
+    float: right;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    height:50px;
+    margin-left:20px;
+    margin-top:37px;
+    text-align:center;
+}
+.movescount{
+    margin-left:100px;
+}
+h1{
+    text-align:left;
+    font-size: 60px; 
+}
+#size{
+    display:flex; 
+    padding: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    height:20px;
+    width:70px;
+    text-align:right;
+    margin-left:5px;
+    margin-top:15px;
+}
+#limitscore{
+    display:flex; 
+    padding: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    height:30px;
+    width:100px;
+    margin-left:5px;
+    margin-top:15px;
+}
+
+#boutonNew, .restart{
+    display:flex;
+    background-color: #937453; 
+    border: none;
+    border-radius: 10px;
+    color: #FFFAF0;
+    padding: 10px 20px;
+    float: right;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    height:50px;
+    margin-left:50px;
+    margin-top:7px;
+}
+.restart{
+    margin-left:35%;
+    display:block;
+    padding:0px;
+    width:40%;
+}
+table {
+    border-style: solid;
+    border-width: 5px;
+    border-color:#B8AEA2;
+    background-color:#B8AEA2;
+    border-radius: 5px;
+    z-index:1;
+}
+tr{
+    background-color:#B8AEA2;
+    border-radius:5px;
+    z-index:1;
+}
+td{
+    height:80px;
+    width:80px;
+    background-color: #CDC1B4;
+    text-align: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight:bold;
+    border-style: solid;
+    border-width: 5px;
+    border-color:#B8AEA2;
+    border-radius: 10px;
+    z-index:2;
+}
+#wincell{
+    display:flex;
+    height:22%;
+    width:22%;
+    justify-content:center;
+    background-color:#FFD700;
+    color:white;
+    font-size:110%;
+    font-weight:bold;
+    margin-left:42%;
+    border-radius: 10px;
+}
+#wincell > p{
+    margin:auto;
+}
